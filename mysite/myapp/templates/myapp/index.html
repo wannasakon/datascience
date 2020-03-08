@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Chat Group</title>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<style>
+    h1,.container,.panel-title{
+        font-family:'Indie Flower', cursive;
+        font-size: 30px;
+    }
+    
+
+</style>
+<body style="background-color: bisque">
+    <div class="container">
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Group Chat</div>
+                </div>
+
+                <div style="padding-top:30px" class="panel-body">
+
+                    <div style="display:none" class="alert alert-danger col-sm-12"></div>
+
+                    <form class="form-horizontal" role="form" action="" method="POST">
+
+                        {% csrf_token %}
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"></span>
+                            <textarea class="form-control" name="group" placeholder="Enter textarea" required></textarea>
+                            <!-- <input id="chat" type="text" class="form-control" name="group" value="{{ group }}"
+                                placeholder="transaction date" required> -->
+                        </div>
+
+                        <div style="margin-top:10px" class="form-group">
+                            <div class="col-sm-12 controls">
+                                <center><button type="submit" id="btn-login" class="btn btn-success" style="font-size: 25px">submit</button></center>
+                                <!-- <a id="btn" href="./mysite/static/showgraph.html" class="btn btn-primary" name="submit" >{{ submit }}</a> -->
+                                <h1>Chatgroup : {{ result }}</h1>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+</body>
