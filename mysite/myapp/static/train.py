@@ -4,7 +4,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.datasets import fetch_20newsgroups
 from joblib import dump
 
-categories = ['talk.religion.misc', 'sci.electronics','rec.motorcycles', 'comp.graphics']
+categories = ['soc.religion.christian', 'sci.electronics','rec.motorcycles', 'comp.graphics']
 # categories = ['talk.religion.misc', 'soc.religion.christian','sci.space', 'comp.graphics']
 data = fetch_20newsgroups()
 train = fetch_20newsgroups(subset='train', categories=categories)

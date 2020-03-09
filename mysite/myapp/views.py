@@ -2,7 +2,7 @@ from django.shortcuts import render
 from joblib import load
 from sklearn.datasets import fetch_20newsgroups
 data = fetch_20newsgroups()
-categories = ['talk.religion.misc', 'sci.electronics','rec.motorcycles', 'comp.graphics']
+categories = ['soc.religion.christian', 'sci.electronics','rec.motorcycles', 'comp.graphics']
 # categories = ['talk.religion.misc', 'soc.religion.christian','sci.space', 'comp.graphics']
 train = fetch_20newsgroups(subset='train', categories=categories)
 # fetch_20newsgroups(subset='train', categories=categories)
