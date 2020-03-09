@@ -7,29 +7,29 @@
 * pip install joblib
 * pip install numpy
 * pip install sklearn
-#migrate
+# migrate
 * python3 manage.py startapp myapp
 * python3 manage.py makemigrations
 * python3 manage.py migrate
 * python3 manage.py createsuperuser
-#คำสั่ง Run on Linux
+# คำสั่ง Run on Linux
 * cd mysite
 * python3 manage.py runserver
-#คำสั่งใช้บน run on Windows
+# คำสั่งใช้บน run on Windows
 * cd mysite
 * python manage.py runserver
 
-#Check train.py
+# Check train.py
 * cd mysite/myapp/static
 * python3 train.py
 
-#Group
+# Group
 * soc.religion.christian การพูดคุยศาสนาคริสต์
 * sci.electronics วิทย์อิเล็กทรอนิกส์
 * rec.motorcycles รถจักรยานยนต์
 * comp.graphics คอมพิวเตอร์กราฟฟิก
 
-#Ex. text
+# Ex. text
 # 1. soc.religion.christian การพูดคุยศาสนาคริสต์
   * Hi, I’m a Christian
   * Christian is a great religio
