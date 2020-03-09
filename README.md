@@ -4,6 +4,9 @@
 * pipenv install django
 * pipenv shell
 * django-admin startproject mysite
+* pip install joblib
+* pip install numpy
+* pip install sklearn
 #migrate
 * python3 manage.py startapp myapp
 * python3 manage.py makemigrations
